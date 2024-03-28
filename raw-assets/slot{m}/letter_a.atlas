@@ -1,0 +1,13 @@
+
+letter_a.png
+size: 198,213
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+letter_a
+  rotate: false
+  xy: 2, 2
+  size: 194, 209
+  orig: 300, 300
+  offset: 53, 46
+  index: -1

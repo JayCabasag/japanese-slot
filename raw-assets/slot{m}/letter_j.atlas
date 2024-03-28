@@ -1,0 +1,13 @@
+
+letter_j.png
+size: 200,221
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+letter_j
+  rotate: false
+  xy: 2, 2
+  size: 196, 217
+  orig: 300, 300
+  offset: 52, 42
+  index: -1

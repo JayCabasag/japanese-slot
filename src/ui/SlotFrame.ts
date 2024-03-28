@@ -2,7 +2,7 @@ import { Container, Sprite } from 'pixi.js';
 import gsap from 'gsap';
 
 /**
- * The game logo, presented in the Home screen
+ * The slot frame, presented in the Home screen
  */
 export class SlotFrame extends Container {
     /** The logo image */

@@ -1,0 +1,41 @@
+{
+"skeleton": {
+	"hash": "MR4AB3FaVXmzeHCZBBwwyLW4ppo",
+	"spine": "3.8.75",
+	"x": -150,
+	"y": -150,
+	"width": 300,
+	"height": 300,
+	"images": "C:/Users/PC/Documents/JapaneseSlot",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "letter_k", "bone": "root", "attachment": "letter_k" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"letter_k": {
+				"letter_k": { "width": 300, "height": 300 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"root": {
+				"scale": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1, "x": 1.2, "y": 1.2, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2 }
+				]
+			}
+		}
+	}
+}
+}

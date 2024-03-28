@@ -1,0 +1,41 @@
+{
+"skeleton": {
+	"hash": "MLr+73lMcMlFnzG8gUbqEysF1sI",
+	"spine": "3.8.75",
+	"x": -150,
+	"y": -150,
+	"width": 300,
+	"height": 300,
+	"images": "C:/Users/PC/Documents/JapaneseSlot",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "rice_balls", "bone": "root", "attachment": "rice_balls" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"rice_balls": {
+				"rice_balls": { "width": 300, "height": 300 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"root": {
+				"scale": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1, "x": 1.2, "y": 1.2, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2 }
+				]
+			}
+		}
+	}
+}
+}

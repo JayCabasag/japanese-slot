@@ -1,0 +1,13 @@
+
+letter_q.png
+size: 223,230
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+letter_q
+  rotate: false
+  xy: 2, 2
+  size: 219, 226
+  orig: 300, 300
+  offset: 40, 37
+  index: -1

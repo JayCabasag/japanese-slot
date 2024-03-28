@@ -1,0 +1,13 @@
+
+rice_balls.png
+size: 249,221
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+rice_balls
+  rotate: false
+  xy: 2, 2
+  size: 245, 217
+  orig: 300, 300
+  offset: 24, 38
+  index: -1

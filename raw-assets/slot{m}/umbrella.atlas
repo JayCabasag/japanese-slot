@@ -1,0 +1,13 @@
+
+umbrella.png
+size: 246,231
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+umbrella
+  rotate: false
+  xy: 2, 2
+  size: 242, 227
+  orig: 300, 300
+  offset: 29, 37
+  index: -1

@@ -1,0 +1,13 @@
+
+sushi_3.png
+size: 248,262
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sushi_3
+  rotate: false
+  xy: 2, 2
+  size: 244, 258
+  orig: 300, 300
+  offset: 27, 11
+  index: -1

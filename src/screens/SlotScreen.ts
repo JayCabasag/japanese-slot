@@ -54,7 +54,7 @@ export class SlotScreen extends Container {
     /** Resize the screen, fired whenever window size changes  */
     public resize(width: number, height: number) {
         this.slotFrame.x = width * 0.5
-        this.slotFrame.y = (height * 0.5) - (this.base.height - 60)
+        this.slotFrame.y = (height * 0.5) - 85
         this.startSpinButton.x = width * 0.5;
         this.startSpinButton.y = height - 130;
         this.base.width = width;

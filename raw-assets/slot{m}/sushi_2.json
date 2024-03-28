@@ -1,0 +1,41 @@
+{
+"skeleton": {
+	"hash": "UxWkpVkojutWLa2CXU1NujB9nOE",
+	"spine": "3.8.75",
+	"x": -150,
+	"y": -150,
+	"width": 300,
+	"height": 300,
+	"images": "C:/Users/PC/Documents/JapaneseSlot",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "sushi_2", "bone": "root", "attachment": "sushi_2" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"sushi_2": {
+				"sushi_2": { "width": 300, "height": 300 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"root": {
+				"scale": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1, "x": 1.2, "y": 1.2, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2 }
+				]
+			}
+		}
+	}
+}
+}

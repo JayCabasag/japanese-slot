@@ -1,0 +1,13 @@
+
+letter_k.png
+size: 186,219
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+letter_k
+  rotate: false
+  xy: 2, 2
+  size: 182, 215
+  orig: 300, 300
+  offset: 55, 43
+  index: -1
