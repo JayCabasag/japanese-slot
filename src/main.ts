@@ -12,6 +12,7 @@ import { getUrlParam } from './utils/getUrlParams';
 import { sound } from '@pixi/sound';
 import { SlotScreen } from './screens/SlotScreen';
 
+
 /** The PixiJS app Application instance, shared across the project */
 export const app = new Application<HTMLCanvasElement>({
     resolution: Math.max(window.devicePixelRatio, 2),
@@ -36,6 +37,8 @@ function resize() {
     app.renderer.view.style.width = `${windowWidth}px`;
     app.renderer.view.style.height = `${windowHeight}px`;
     window.scrollTo(0, 0);
+    
+    globalThis.__PIXI_APP__ = app;
 
     // Update renderer  and navigation screens dimensions
     app.renderer.resize(width, height);

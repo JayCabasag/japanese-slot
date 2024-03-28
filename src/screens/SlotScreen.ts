@@ -9,6 +9,7 @@ import { RippleButton } from '../ui/RippleButton';
 import { SettingsPopup } from '../popups/SettingsPopup';
 import { bgm } from '../utils/audio';
 import { SlotFrame } from '../ui/SlotFrame';
+import { Reel } from '../ui/Reel';
 
 /** Custom ease curve for y animation of the base to reveal the screen */
 const easeSoftBackOut = registerCustomEase(
@@ -27,6 +28,10 @@ export class SlotScreen extends Container {
     private base: NineSlicePlane;
     /** Slot Frame */
     private slotFrame: SlotFrame;
+    /** Reels Container */
+    private reelsContainer: Container;
+    /** Slot Reels */
+    private reels: Reel[];
 
     constructor() {
         super();
@@ -36,6 +41,15 @@ export class SlotScreen extends Container {
 
         this.slotFrame = new SlotFrame();
         this.addChild(this.slotFrame)
+
+        this.reelsContainer = new Container();
+        this.slotFrame.addChild(this.reelsContainer)
+
+        this.reels = Array.from({ length: 5 }, () => {
+            const newReel = new Reel();
+            this.reelsContainer.addChild(newReel)
+            return newReel;
+        });
 
         this.settingsButton = new RippleButton({
             image: 'icon-settings',
@@ -61,6 +75,12 @@ export class SlotScreen extends Container {
         this.base.y = height - 140;
         this.settingsButton.x = width - 30;
         this.settingsButton.y = 30;
+
+        this.reelsContainer.x = -this.slotFrame.x / 2;
+        this.reelsContainer.y = -this.slotFrame.y / 2;
+        this.reels.forEach((reel, index) => {
+            reel.x = index * 195
+        })
     }
 
     /** Show screen with animations */
@@ -71,6 +91,7 @@ export class SlotScreen extends Container {
         this.slotFrame.hide(false);
         this.startSpinButton.hide(false);
         this.settingsButton.hide(false);
+        this.reels.forEach(reel => reel.hide(false))
 
         // Play reveal animation
         this.playRevealAnimation();
@@ -80,6 +101,7 @@ export class SlotScreen extends Container {
         await this.startSpinButton.show();
         this.interactiveChildren = true;
         await this.slotFrame.show();
+        await this.reels.forEach(async reel => await reel.show())
         await this.settingsButton.show();
     }
 

@@ -127,3 +127,8 @@ export function randomHash(length: number, random = Math.random, charset = HASH_
 
     return result;
 }
+
+export function random10Symbols(){
+    const reels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    return Array.from({ length: 10 }, () => reels[Math.floor(Math.random() * reels.length)])
+}
