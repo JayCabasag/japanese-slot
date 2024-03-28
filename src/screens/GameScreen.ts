@@ -61,7 +61,6 @@ export class GameScreen extends Container {
 
     constructor() {
         super();
-
         this.pauseButton = new RippleButton({
             image: 'icon-pause',
             ripple: 'icon-pause-stroke',

@@ -22,3 +22,8 @@ const defaultConfig = {
 
 /** Match3 configuration */
 export type SlotConfig = typeof defaultConfig;
+
+/** Build a config object overriding default values if suitable */
+export function slotGetConfig(customConfig: Partial<SlotConfig> = {}): SlotConfig {
+    return { ...defaultConfig, ...customConfig };
+}
